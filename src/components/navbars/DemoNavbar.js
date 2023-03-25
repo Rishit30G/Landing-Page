@@ -18,6 +18,7 @@ import {
   Container,
   Row,
   Col,
+  Button,
 } from "reactstrap";
 
 function DemoNavbar(props) {
@@ -311,6 +312,9 @@ function DemoNavbar(props) {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <Button>
+                <a href="https://google.com">Go to App</a>
+              </Button>
             </Nav>
           </Collapse>
         </Container>

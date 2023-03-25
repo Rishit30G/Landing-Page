@@ -13,7 +13,7 @@ function Cards() {
       startAt: 0,
       focusAt: 2,
       perTouch: 1,
-      perView: 5,
+      perView: 4,
     }).mount();
   }, []);
   return (
@@ -26,16 +26,11 @@ function Cards() {
                 <h1 className="display-3">
                   Unconventional cards
                   <span className="text-primary">
-                    One card for every problem
+                    HIGHLIGHTS OF THE WEEK 
                   </span>
                 </h1>
                 <p className="lead">
-                  We love cards and everybody on the web seems to. We have gone
-                  above and beyond with options for you to organise your
-                  information. From cards designed for blog posts, to product
-                  cards or user profiles, you will have many options to choose
-                  from. All the cards follow the material principles and have a
-                  design that stands out.
+                  Stay updated on the latest the Latest Web 3.0 DAI Developments. Catch the Top Highlights of the week 
                 </p>
               </Col>
               <Col md="12">

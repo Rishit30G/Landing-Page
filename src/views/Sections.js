@@ -45,12 +45,17 @@ function Sections() {
   return (
     <>
       <DemoNavbar type="dark" />
-      <div className="wrapper">
-        <HeadersSection />
+      <div className="wrapper" >
+        <HeadersSection/>
+        <div style={{height: "150px"}}></div>
         <Cards/>
+        <div style={{height: "150px"}}></div>
         <FeaturesSection /> 
+        <div style={{height: "150px"}}></div>
         <Testimonials/>
+        <div style={{height: "150px"}}></div>
         <Pricing/>
+        <div style={{height: "150px"}}></div>
         <DemoFooter/>
       </div>
     </>

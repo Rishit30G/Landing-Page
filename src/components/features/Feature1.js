@@ -15,10 +15,9 @@ function Feature1() {
               <Badge className="mb-3" color="primary" pill>
                 Insight
               </Badge>
-              <h3 className="display-3">Full-Funnel Social Analytics</h3>
+              <h3 className="display-3">Top Proposals</h3>
               <p className="lead">
-                The time is now for it to be okay to be great. For being a
-                bright color. For standing out.
+                Leading the Way: A Curated List of the Most Promising DAO Proposals for the Web 3.0 
               </p>
             </Col>
           </Row>
@@ -41,7 +40,7 @@ function Feature1() {
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  More about us{" "}
+                  Proposal Link 
                   <i className="ni ni-bold-right text-primary"></i>
                 </a>
               </div>

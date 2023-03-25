@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // JavaScript library for creating fancy carousels like components
 import Glide from "@glidejs/glide";
 // reactstrap components
@@ -14,24 +14,39 @@ import {
   Col,
 } from "reactstrap";
 
+
 // Core Components
 
+
 function Header3() {
+  const texts = ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [text, setText] = useState(texts[currentIndex]);
+  function handleClick() {
+    const nextIndex = (currentIndex + 1) % texts.length;
+    setCurrentIndex(nextIndex);
+    setText(texts[nextIndex]);
+  }
+  
+
   React.useEffect(() => {
     new Glide(".glide", {
       type: "carousel",
       startAt: 0,
       focusAt: 2,
-      perTouch: 1,
-      perView: 4,
+      perTouch: 0,
+      perView: 3.6,
+      autoplay: 5000
     }).mount();
   }, []);
+ 
   return (
     <>
       <header className="header-3 bg-dark" >
-        <Navbar className="navbar-transparent navbar-absolute" expand="lg " style={{marginTop: '90px'}}>
+      <div style={{marginTop: '70px'}}>
+        {/* <Navbar className="navbar-transparent navbar-absolute" expand="lg" style={{marginTop: '70px'}}>
           <Container>
-            <div className="navbar-translate" >
+            <div className="navbar-translate">
               <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Creative Tim
               </NavbarBrand>
@@ -48,6 +63,7 @@ function Header3() {
                 <span className="navbar-toggler-icon"></span>
               </button>
             </div>
+            
             <UncontrolledCollapse
               id="example-header-3"
               navbar
@@ -96,7 +112,7 @@ function Header3() {
               </Nav>
             </UncontrolledCollapse>
           </Container>
-        </Navbar>
+        </Navbar> */}
         <div className="page-header header-filter">
           <div className="content-center">
             <Row>
@@ -104,7 +120,7 @@ function Header3() {
                 <h4 className="title text-white text-uppercase ml-0">
                   Build stunning websites and apps
                 </h4>
-                <div className="info info-horizontal ml-0">
+                {/* <div className="info info-horizontal ml-0">
                   <div className="icon icon-shape bg-white shadow rounded-circle text-default">
                     <i className="ni ni-active-40"></i>
                   </div>
@@ -117,8 +133,8 @@ function Header3() {
                       go through as we become older and we get insulted
                     </p>
                   </div>
-                </div>
-                <div className="info info-horizontal ml-0">
+                </div> */}
+                {/* <div className="info info-horizontal ml-0">
                   <div className="icon icon-shape bg-white shadow rounded-circle text-default">
                     <i className="ni ni-trophy"></i>
                   </div>
@@ -131,19 +147,18 @@ function Header3() {
                       to give others a hand. We get our heart broken by people
                       we love.
                     </p>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
                 <div className="info info-horizontal ml-0">
                   <div className="icon icon-shape bg-white shadow rounded-circle text-default">
                     <i className="ni ni-paper-diploma"></i>
                   </div>
                   <div className="description">
                     <h6 className="info-title text-uppercase text-white pl-0">
-                      Get practical advice
+                      Lorem Ipsum 
                     </h6>
                     <p className="text-white opacity-8">
-                      When we lose family over time. What else could rust the
-                      heart more over time? Blackgold. It becomes harder...
+                    {text}
                     </p>
                   </div>
                 </div>
@@ -194,18 +209,18 @@ function Header3() {
                       </li>
                     </ul>
                   </div>
-                  <div className="glide__arrows" data-glide-el="controls">
+                  <div className="glide__arrows" data-glide-el="controls" onClick={handleClick}>
                     <button
                       className="glide__arrow glide__arrow--left"
                       data-glide-dir="<"
                     >
-                      <i className="ni ni-bold-left"></i>
+                    <i className="ni ni-bold-left" ></i>
                     </button>
                     <button
                       className="glide__arrow glide__arrow--right"
                       data-glide-dir=">"
                     >
-                      <i className="ni ni-bold-right"></i>
+                    <i className="ni ni-bold-right"></i>
                     </button>
                   </div>
                 </div>
@@ -213,9 +228,11 @@ function Header3() {
             </Row>
           </div>
         </div>
+        </div>
       </header>
+     
     </>
   );
-}
+ }
 
 export default Header3;

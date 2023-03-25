@@ -69,10 +69,12 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-satisfied text-info"></i>
                     </div>
-                    <h5 className="info-title text-white">Best Quality</h5>
+                    <h5 className="info-title text-white">Features</h5>
                     <p className="description">
-                      What matters is the people who are sparked by it. And the
-                      people who are like offended by it.
+                      Stay Up-to-Date on DAOs Governance. Our platform offers
+                      the latest news and updates on the DAOs governance, so you
+                      can stay informed about the latest developments in the
+                      industry
                     </p>
                   </div>
                 </Col>
@@ -81,10 +83,14 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-palette text-danger"></i>
                     </div>
-                    <h5 className="info-title text-white">Awesome Design</h5>
+                    <h5 className="info-title text-white">
+                      Track DAO Proposals and Grants
+                    </h5>
                     <p className="description">
-                      Because it's about motivating the doers. Because I’m here
-                      to follow my dreams and inspire the world.
+                      Our comprehensive tracking system allows you to monitor
+                      the progress of DAO proposals and grants in real-time,
+                      giving you the insight you need to make informed
+                      decisions.
                     </p>
                   </div>
                 </Col>
@@ -93,10 +99,13 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-spaceship text-default"></i>
                     </div>
-                    <h5 className="info-title text-white">Great Performance</h5>
+                    <h5 className="info-title text-white">
+                      Timeline-Based Calendar
+                    </h5>
                     <p className="description">
-                      There’s nothing I really wanted to do in life that I
-                      wasn’t able to get good at. We’re constantly growing.
+                      Our calendar feature provides a timeline-based view of
+                      major DAO proposals and events, making it easy to stay
+                      organized and keep track of important dates.
                     </p>
                   </div>
                 </Col>
@@ -107,10 +116,13 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-planet text-primary"></i>
                     </div>
-                    <h5 className="info-title text-white">Fast Development</h5>
+                    <h5 className="info-title text-white">
+                      Web 3.0 Job Portal
+                    </h5>
                     <p className="description">
-                      I always felt like I could do anything. That’s the main
-                      thing people are controlled by the force!
+                      Our job portal connects employers with qualified
+                      candidates who are passionate about Web 3.0 and
+                      decentralized technologies.
                     </p>
                   </div>
                 </Col>
@@ -119,10 +131,14 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-glasses-2 text-warning"></i>
                     </div>
-                    <h5 className="info-title text-white">Super Fresh</h5>
+                    <h5 className="info-title text-white">
+                      Create Web 3.0 Events
+                    </h5>
                     <p className="description">
-                      Thoughts- their perception of themselves! They're slowed
-                      down by their perception of themselves.
+                      Our event creation feature allows you to easily create and
+                      manage Web 3.0 events, making it easier to connect with
+                      like-minded individuals and stay involved in the
+                      community.
                     </p>
                   </div>
                 </Col>
@@ -131,10 +147,13 @@ function Feature2() {
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-notification-70 text-success"></i>
                     </div>
-                    <h5 className="info-title text-white">Organized Content</h5>
+                    <h5 className="info-title text-white">
+                      Profile Scoring Engine
+                    </h5>
                     <p className="description">
-                      If you're taught you can’t do anything, you won’t do
-                      anything. I was taught I could do everything.
+                      Our profile scoring engine helps you identify the most
+                      qualified candidates for your Web 3.0 job openings,
+                      enabling faster and more efficient recruitment.
                     </p>
                   </div>
                 </Col>
