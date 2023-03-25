@@ -62,7 +62,7 @@ function Feature2() {
                 </ul>
               </div>
             </Col>
-            <Col className="pl-md-0" lg="7" md="12">
+            <Col className="pl-md-0" lg="8" md="12">
               <Row>
                 <Col lg="4" md="4">
                   <div className="info text-left bg-info shadow">
@@ -110,8 +110,8 @@ function Feature2() {
                   </div>
                 </Col>
               </Row>
-              <Row>
-                <Col lg="4" md="4">
+              <Row style={{marginTop: '50px'}}>
+                <Col lg="4" md="4" >
                   <div className="info text-left bg-primary shadow">
                     <div className="icon icon-shape bg-gradient-white shadow rounded-circle text-primary">
                       <i className="ni ni-planet text-primary"></i>
